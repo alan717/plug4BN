@@ -209,8 +209,8 @@ def DeFlattenBackgrounder(bv, addr):
 def dump_mlil_info(bv: BinaryView, address: int):
     func: Function = get_func_containing(bv, address)
     cur: MediumLevelILInstruction = func.get_low_level_il_at(address).medium_level_il
-    print("当前指令12332231:", cur)
-    print("\t指令开始地址:1111111", hex(cur.address))
+    print("当前指令:", cur)
+    print("\t指令开始地址:", hex(cur.address))
     print("\t操作符:", cur.operation)
     print("\t操作数:", cur.operands)
     try:
