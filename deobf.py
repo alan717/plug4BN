@@ -209,7 +209,7 @@ def DeFlattenBackgrounder(bv, addr):
 def dump_mlil_info(bv: BinaryView, address: int):
     func: Function = get_func_containing(bv, address)
     cur: MediumLevelILInstruction = func.get_low_level_il_at(address).medium_level_il
-    print("当前指令:", cur)
+    print("当前指令23sss33:", cur)
     print("\t指令开始地址:", hex(cur.address))
     print("\t操作符:", cur.operation)
     print("\t操作数:", cur.operands)
@@ -221,9 +221,9 @@ def dump_mlil_info(bv: BinaryView, address: int):
         print(e)
 
 
-PluginCommand.register_for_address("反混淆",
-                                   "去除OLLVM混淆",
-                                   DeFlattenBackgrounder)
-PluginCommand.register_for_address("当前MLIL",
-                                   "获取当前中间语言指令信息",
-                                   dump_mlil_info)
+# PluginCommand.register_for_address("反混淆",
+                                #    "去除OLLVM混淆",
+                                #    DeFlattenBackgrounder)
+# PluginCommand.register_for_address("当前MLIL",
+                                #    "获取当前中间语言指令信息",
+                                #    dump_mlil_info)

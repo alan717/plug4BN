@@ -3,3 +3,5 @@ connect_vscode_debugger(port=12345)
 
 
 install_api可以安装binninja py库。
+
+connect_vscode_debugger(port=12345)
