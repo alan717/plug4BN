@@ -1,6 +1,6 @@
 from binaryninja import *
 from . import deobf
-from . import dd
+from . import dds
 #def do_nothing(bv):
 	#show_message_box("Do Nothing", "Congratulations! You have successfully done nothing.\n\n" +
 					 #"Pat yourself on the back.", MessageBoxButtonSet.OKButtonSet, MessageBoxIcon.ErrorIcon)

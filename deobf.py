@@ -221,9 +221,9 @@ def dump_mlil_info(bv: BinaryView, address: int):
         print(e)
 
 
-# PluginCommand.register_for_address("反混淆",
-                                #    "去除OLLVM混淆",
-                                #    DeFlattenBackgrounder)
-# PluginCommand.register_for_address("当前MLIL",
-                                #    "获取当前中间语言指令信息",
-                                #    dump_mlil_info)
+PluginCommand.register_for_address("反混淆",
+                                   "去除OLLVM混淆",
+                                   DeFlattenBackgrounder)
+PluginCommand.register_for_address("当前MLIL",
+                                   "获取当前中间语言指令信息",
+                                   dump_mlil_info)
